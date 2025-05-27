@@ -1,5 +1,5 @@
 # my-redis-ha
 
-# Redis HA (Sentinel) 
+## Redis HA (Sentinel) 
 
-# AOP Based Redis Cache Fallback 
+## AOP Based Redis Cache Fallback 
