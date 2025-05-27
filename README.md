@@ -1,5 +1,7 @@
 # my-redis-ha
 
-## Redis HA (Sentinel) 
+### Spring Boot + Spring Security + Redis
 
-## AOP Based Redis Cache Fallback 
+### Redis HA (Sentinel) 
+
+### AOP Based Redis Cache Fallback 
