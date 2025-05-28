@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef6d3a39-4c18-4837-ae96-c5548003d900" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/BackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/ActuatorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/BaseSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/CacheErrorLoggingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/CommonBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/CommonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/DockerClientConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/IgnoredUriFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/JacksonGlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/JasyptConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/QueryDslConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/RedisDevStartupRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/RedisKeyExpirationListenerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/S3Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/DecryptException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/DuplicateUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/EncryptException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/FileSaveException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/MIMETypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/MessageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/NoDataFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/exception/UserDeniedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/filter/ClickLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/filter/MDCLoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/AuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/CustomErrorReportValveHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/CustomInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/CustomLogoutSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/ExceptionAdvisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/handler/RequestAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/listener/KeyExpirationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/Const.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/GlobalConst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/RequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/SearchPropObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/Success.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/object/SuccessResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/AuthenticationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/Column.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/CompressZip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/DomainUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/MessageLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/S3ObjectKeyValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/common/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/account/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/aclpolicy/AclPolicyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/aclpolicy/AclPolicyCrudController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/aws/S3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/history/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/role/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/tenant/TenantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/tenant/TenantManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/user/UserInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/user/UserInfoManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/controller/user/UserPointController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/account/entity/AccountSessionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/aclpolicy/dto/AclCheckRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/aclpolicy/dto/AclPolicyInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/aclpolicy/dto/AclPolicyRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/aclpolicy/entity/AclPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/aclpolicy/entity/AclPolicyRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/aws/dto/UploadRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/history/dto/LoginHistoryInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/history/dto/LoginTryHistoryInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/history/entity/LoginHistoryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/history/entity/LoginTryHistoryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/role/dto/RoleInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/role/entity/RoleInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/tenant/dto/AllowedTenantInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/tenant/dto/TenantInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/tenant/entity/AllowedTenantInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/tenant/entity/TenantInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/dto/BulkCreateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/dto/UserCreateResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/dto/UserListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/dto/UserPointDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/dto/UserPointTransactionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/dto/UsersDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/ConfirmEmailInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/PointType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/UserExpiredPointInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/UserGroupInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/UserPointCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/UserPointInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/UserPointTransactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/model/ConfirmPwdModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/model/CreateUserResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/model/LoginRequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/model/user/model/UserInfoResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/account/IAccountSessionInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/aclpolicy/IAclPolicyRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/aclpolicy/IAclPolicyRoleRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/history/ILoginHistoryInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/history/ILoginTryHistoryInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/role/IRoleInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/tenant/IAllowedTenantInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/tenant/ITenantInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/user/IUserGroupInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/user/IUserInfoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/user/IUserPointCategoryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/user/IUserPointRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/repository/user/IUserPointTransactionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/account/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/account/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aclpolicy/AclPolicyCrudServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aclpolicy/AclPolicyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aclpolicy/IAclPolicyCrudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aclpolicy/IAclPolicyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aws/IS3Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aws/IValidS3Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aws/S3KeyValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/aws/S3ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/history/ILoginHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/history/ILoginTryHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/history/LoginHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/history/LoginTryHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/role/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/role/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/tenant/AllowedTenantInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/tenant/IAllowedTenantInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/tenant/ITenantInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/tenant/TenantInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/IUserInfoManageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/IUserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/IUserPointService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/UserInfoInfoManageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/UserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/UserPointServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/backend/api/service/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/backend/api/FullIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/backend/api/common/utils/JasyptEncryptorUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/backend/api/controller/account/AccountControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/backend/api/service/account/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/backend/api/service/user/UserServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend-api" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "HongsukRyu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HongsukRyu/my-redis-ha.git",
+    "accountId": "004423d0-983a-4aed-a843-3a5f5afdf1a9"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2xhoHSs6wHOUwDfFsZndBs2tv3e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build my-redis-ha.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BackendApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/andrew/Desktop/my-redis-ha/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.github.shiraji.gradleconfirmation.config.GradleConfirmationConfig.DISABLE_TASKS_LIST_KEY": [
+      ":classes"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="JASYPT_ENCRYPTOR_PASSWORD" value="WELABSPACE2023" />
+      </envs>
+      <module name="backend-api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.backend.api.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef6d3a39-4c18-4837-ae96-c5548003d900" name="Changes" comment="" />
+      <created>1748399579384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748399579384</updated>
+      <workItem from="1748399580683" duration="3129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
