@@ -4,6 +4,7 @@ import com.backend.api.common.annotation.RedisFallback;
 import com.backend.api.common.aspect.fallback.FallbackStrategy;
 import com.backend.api.common.utils.MessageLogger;
 import com.backend.api.common.utils.Utils;
+import com.backend.api.service.message.MessageProducerService;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -32,6 +33,7 @@ public class RedisFallbackAspect {
     private final List<FallbackStrategy> fallbackStrategies;
     private final Utils utils;
     private final Environment env;
+    private final MessageProducerService messageProducerService;
 
     /**
      * @RedisFallback 어노테이션이 적용된 메서드에 대한 Around Advice
@@ -61,6 +63,9 @@ public class RedisFallbackAspect {
                 if (redisFallback.enableSlackNotification()) {
                     sendSlackNotification(methodName, throwable);
                 }
+                
+                // RabbitMQ로 Redis Fallback 메시지 전송
+                sendRedisFallbackMessage(methodName, args, throwable, joinPoint.getTarget().getClass().getSimpleName());
                 
                 // Fallback 메서드가 지정된 경우
                 if (!redisFallback.fallbackMethod().isEmpty()) {
@@ -156,6 +161,62 @@ public class RedisFallbackAspect {
             }
         } catch (Exception e) {
             logger.errorLog("Slack 알림 전송 실패: {}", e.getMessage());
+        }
+    }
+    
+    /**
+     * RabbitMQ로 Redis Fallback 메시지 전송
+     */
+    private void sendRedisFallbackMessage(String methodName, Object[] args, Throwable throwable, String sourceClass) {
+        try {
+            // Redis 작업 타입 추론
+            String operationType = "UNKNOWN";
+            String redisKey = "unknown";
+            String redisValue = "";
+            
+            // 메서드명으로부터 작업 타입 추론
+            if (methodName.contains("set") || methodName.contains("Set") || methodName.contains("save")) {
+                operationType = "SET";
+            } else if (methodName.contains("get") || methodName.contains("Get") || methodName.contains("find")) {
+                operationType = "GET";
+            } else if (methodName.contains("delete") || methodName.contains("Delete") || methodName.contains("remove")) {
+                operationType = "DELETE";
+            } else if (methodName.contains("expire") || methodName.contains("Expire") || methodName.contains("ttl")) {
+                operationType = "EXPIRE";
+            }
+            
+            // 인자로부터 Redis 키 추출 시도
+            if (args != null && args.length > 0) {
+                for (Object arg : args) {
+                    if (arg instanceof String) {
+                        String argStr = (String) arg;
+                        if (argStr.contains(":") || argStr.startsWith("session") || argStr.startsWith("cache")) {
+                            redisKey = argStr;
+                            break;
+                        }
+                    }
+                }
+                
+                // 값 추출 시도 (JSON 형태로 변환)
+                if (args.length > 1 && args[1] != null) {
+                    redisValue = args[1].toString();
+                }
+            }
+            
+            // RabbitMQ로 메시지 전송
+            messageProducerService.sendRedisFallback(
+                operationType,
+                redisKey,
+                redisValue,
+                methodName,
+                throwable.getMessage()
+            );
+            
+            logger.infoLog("🚀 Redis Fallback 메시지를 RabbitMQ로 전송 완료: method={}, key={}", methodName, redisKey);
+            
+        } catch (Exception e) {
+            logger.errorLog("⚠️ Redis Fallback 메시지 전송 실패: {}", e.getMessage());
+            // RabbitMQ 전송 실패는 원본 Fallback 처리에 영향을 주지 않음
         }
     }
 } 

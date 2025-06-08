@@ -68,6 +68,26 @@ spring:
     cache:
       type: redis
 
+  # RabbitMQ 설정
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 30s
+    publisher-confirm-type: correlated # 메시지 발송 확인
+    publisher-returns: true # 메시지 반환 처리
+    listener:
+      simple:
+        acknowledge-mode: auto # 자동 ACK
+        retry:
+          enabled: true
+          initial-interval: 1s
+          max-attempts: 3
+          max-interval: 10s
+          multiplier: 2.0
+
 logging:
   level:
     com.zaxxer.hikari: DEBUG
