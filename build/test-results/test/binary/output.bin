@@ -1,0 +1,24 @@
+P🔐 BouncyCastle 프로바이더가 static 블록에서 등록되었습니다.
+🔐 Jasypt 설정 완료:
+3  - 알고리즘: PBEWITHSHA256AND256BITAES-CBC-BC
+  - 프로바이더: BC
+  - 출력 타입: base64
+!🔐 원본: 테스트 문자열
+i🔒 암호화: JfKHgINozFPZHGQWBJbth7OQRMnMi013UlnhxRMF0WHno9XcDVYhpOyacfkX0EuC+qbi7GVrwSGYIYQCZ/UBAQ==
+$🔓 복호화: 테스트 문자열
+🔐 Jasypt 설정 완료:
+3  - 알고리즘: PBEWITHSHA256AND256BITAES-CBC-BC
+  - 프로바이더: BC
+  - 출력 타입: base64
+🔐 Jasypt 설정 완료:
+3  - 알고리즘: PBEWITHSHA256AND256BITAES-CBC-BC
+  - 프로바이더: BC
+  - 출력 타입: base64
+
+(🔑 새로 생성된 암호화 값들:
+2=================================================
+�url: ENC(qjNaPPLzFge1WrY/3fCZh0i9xle9TyTQDgtOQ1QvKK5WNbhDMTq1+GwQve/uJZMXujdnNgTameAOZNSxOGK5HNNr3c5nuzO6TDjkfj+z9+5QwgRqvN+Mm5aLWqkXmyJ87aIXvMUhcpHEBZUt+6PKvVySixj0Jptg3TqMS1LWRxXiwpB9g9zuNsB1Af7+dIRB)
+Pusername: ENC(vxW8jpyMObRjCT6No7wXiSWEpqE0/G6oUkUG+Ibwi0SpDtEjuFnSVSSJ30m4iWHO)
+Ppassword: ENC(pB7Q0QMvyOlVOLjuaW27snQ6twwJHcgd4cBOhfeR2VxDuo+r4XuytdsZfcIDwuaW)
+2=================================================
+J✅ 위의 값들을 application-dev.yml에 복사해서 사용하세요!

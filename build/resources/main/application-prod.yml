@@ -20,9 +20,9 @@ spring:
 #======================================================================================================================
   datasource:
     ## 로컬 서버
-    url: ENC(PLxbrWuEMv706G+WjWWEoPoxQX13l2zwImFlvLVnCeYwC7su/Rj6htL0LhsibNu/VNu04JRgY1uhTshzQexkiCKTvLRbmNXg2LuQY3BIV16l/py0+ifX8SSRkAxE8TQdLt38tTEqpuOWMs7eoyIpxcDz0U7gn4PG)
-    username: ENC(a/HoMq4ec+jCmCGzE78Q+Q==)
-    password: ENC(FF4n5XjBfGX+F0aPmm1uVsUqF6AdCSv3)
+    url: ENC(axHsZVwPSzQ/Q5tpMckzjlZM8ek91f58ZBH9vi/aRCCw1EJ3S4r07a3aum+hsqb/KQYASOw/+yk82x7yIrCqGWET6fYVdSix+OqYHnkAnNHZ5IJ1NlzsLSpGQO+TIhZQhTSxPvwY0bvTztckAQyS8a0blDy9DxKclOp/JgtBfXc=)
+    username: ENC(g97KwVFcUTAHgWBOmDjv+3uQWTfhJ0LAmDfn2dd41Qg=)
+    password: ENC(wuPiRzv5nC5LnVpQKW6XIzdEuerji+sNNqv8Z6QTUQQ=)
     driver: com.mysql.cj.jdbc.Driver
 
     hikari:
@@ -125,11 +125,11 @@ authorization:
 
 jasypt:
   encryptor:
-    password: ${JASYPT_ENCRYPTOR_PASSWORD}
-    algorithm: PBEWithMD5AndDES
+    password: ${JASYPT_ENCRYPTOR_PASSWORD:test-secret-key}
+    algorithm: PBEWITHSHA256AND256BITAES-CBC-BC
+    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
     pool-size: 1
     string-output-type: base64
-    iv-generator-classname: org.jasypt.iv.NoIvGenerator
 
 aws:
   region:
