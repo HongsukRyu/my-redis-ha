@@ -14,9 +14,6 @@ spring:
 
   datasource:
     driver: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/TESTDB?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&allowMultiQueries=true
-#    username: root
-#    password: cnrqhrdl1!
     url: ENC(qjNaPPLzFge1WrY/3fCZh0i9xle9TyTQDgtOQ1QvKK5WNbhDMTq1+GwQve/uJZMXujdnNgTameAOZNSxOGK5HNNr3c5nuzO6TDjkfj+z9+5QwgRqvN+Mm5aLWqkXmyJ87aIXvMUhcpHEBZUt+6PKvVySixj0Jptg3TqMS1LWRxXiwpB9g9zuNsB1Af7+dIRB)
     username: ENC(vxW8jpyMObRjCT6No7wXiSWEpqE0/G6oUkUG+Ibwi0SpDtEjuFnSVSSJ30m4iWHO)
     password: ENC(pB7Q0QMvyOlVOLjuaW27snQ6twwJHcgd4cBOhfeR2VxDuo+r4XuytdsZfcIDwuaW)
