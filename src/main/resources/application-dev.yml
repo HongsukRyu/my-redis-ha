@@ -45,6 +45,24 @@ spring:
     pathmatch:
       matching-strategy: ant-path-matcher
 
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update # update / create-drop / create / validate / none
+    #      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    #    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+        show-sql: true
+        highlight_sql: true # ANSI 코드에 색을 나타낸다
+        use_sql_comments: true
+        dialect_storage_engine: InnoDB
+        order_inserts: true
+        order_updates: true
+        jdbc:
+          batch_size: 100
+
   data:
     redis:
       sentinel:
@@ -88,6 +106,7 @@ spring:
           max-interval: 10s
           multiplier: 2.0
 
+
 logging:
   level:
     com.zaxxer.hikari: DEBUG
@@ -111,3 +130,36 @@ jasypt:
     iv-generator-classname: org.jasypt.iv.RandomIvGenerator
     pool-size: 1
     string-output-type: base64
+# OPC-UA Configuration
+opcua:
+  endpoint: ${OPCUA_ENDPOINT:opc.tcp://localhost:4840}
+  security-policy: "None"
+  message-security-mode: "None"
+  application-name: "MES-Poc-Client"
+  application-uri: "urn:mes:poc:client"
+  product-uri: "urn:mes:core:product"
+  request-timeout: 5000
+  session-timeout: 60000
+  subscription-publishing-interval: 1000.0
+  nodes:
+    - nodeId: "ns=2;i=1001"
+      name: "Temperature"
+      dataType: "DOUBLE"
+    - nodeId: "ns=2;i=1002"
+      name: "Pressure"
+      dataType: "DOUBLE"
+    - nodeId: "ns=2;i=1003"
+      name: "EquipmentStatus"
+      dataType: "STRING"
+    - nodeId: "ns=2;i=1004"
+      name: "ProductionCount"
+      dataType: "INTEGER"
+
+# Scheduling Configuration
+scheduler:
+  data-collection:
+    enabled: true
+    fixed-rate: 5000  # 5 seconds
+  alarm-check:
+    enabled: true
+    fixed-rate: 10000  # 10 seconds

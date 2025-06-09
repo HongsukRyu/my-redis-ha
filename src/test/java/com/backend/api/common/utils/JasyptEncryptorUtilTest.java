@@ -58,7 +58,7 @@ public class JasyptEncryptorUtilTest {
         // username
         // password
         String[] targets = {
-                "jdbc:mysql://localhost:3306/TESTDB?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&allowMultiQueries=true",
+                "jdbc:mysql://localhost:3306/MESDB?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&allowMultiQueries=true",
                 "root",
                 "cnrqhrdl1!"
         };

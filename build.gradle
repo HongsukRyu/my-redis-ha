@@ -222,6 +222,10 @@ dependencies {
 	// RabbitMQ
 	implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
+	// OPC-UA Client - Eclipse Milo
+	implementation 'org.eclipse.milo:sdk-client:0.6.16'
+	implementation 'org.eclipse.milo:bsd-core:0.6.16'
+
 }
 
 tasks.register("startRedisIfNotRunning") {
